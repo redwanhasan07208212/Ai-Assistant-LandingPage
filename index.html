@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>JARVIS AI – AI assistants for small businesses</title>
+    <meta
+      name="description"
+      content="JARVIS AI builds assistants that reply to customers in Bangla and English, take orders and automate routine tasks for small businesses."
+    />
+    <script>
+      try {
+        var t =
+          localStorage.getItem("theme") ||
+          (matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" /></symbol>
+    </svg>
+
+    <header>
+      <div class="wrap nav">
+        <a class="logo" href="#top">JARVIS <span>AI</span></a>
+        <nav class="links" id="menu" aria-label="Main">
+          <a href="#services">Services</a><a href="#why">Why us</a
+          ><a href="#tools">Free tools</a><a href="#pricing">Packages</a
+          ><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>
+          <a class="btn sm" href="#contact">Book a call</a>
+        </nav>
+        <button
+          class="tt"
+          id="theme"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 13.5A9 9 0 1 1 10.5 3a7 7 0 0 0 10.5 10.5z" />
+          </svg>
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+            />
+          </svg>
+        </button>
+        <button
+          class="menu"
+          id="menu-btn"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg class="bars" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" /></svg
+          ><svg class="x" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="herowrap">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="wrap hero">
+          <div>
+            <div class="eyebrow">AI assistants for small businesses</div>
+            <h1>Stop answering the <span>same questions</span> all day.</h1>
+            <p>
+              JARVIS AI builds assistants that reply to your customers in Bangla
+              and English, take orders, and handle routine tasks, so you can
+              focus on growing your business.
+            </p>
+            <div class="row">
+              <a class="btn" href="#contact">Get a free consultation</a
+              ><a class="btn ghost" href="#tools">Try the free tools</a>
+            </div>
+          </div>
+          <div>
+            <div
+              class="chat"
+              role="img"
+              aria-label="Example chat between a customer and the JARVIS AI assistant"
+            >
+              <div class="listen">
+                <div class="orb">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="9" y="3" width="6" height="11" rx="3" />
+                    <path d="M5 11a7 7 0 0 0 14 0M12 18v3" />
+                  </svg>
+                </div>
+                <div>
+                  <b>JARVIS AI</b
+                  ><small>Online · replies in Bangla and English</small>
+                </div>
+              </div>
+              <div class="tag">Example conversation</div>
+              <div class="m u">আজকে অর্ডার করলে কবে পাব?</div>
+              <div class="m a">
+                Delivery time depends on your area. Share your location and I’ll
+                confirm it right away.
+              </div>
+              <div class="m u">Can I order 2 of the blue one?</div>
+              <div class="m a">
+                Done. I’ve noted your order and sent it to the team. Anything
+                else?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strip">
+        <div class="wrap">
+          <span>Works where your customers already are:</span
+          ><span class="pill">Facebook Messenger</span
+          ><span class="pill">WhatsApp</span
+          ><span class="pill">Your website</span
+          ><span class="pill">Telegram</span
+          ><span class="pill">Google Sheets</span>
+        </div>
+      </div>
+
+      <section>
+        <div class="wrap">
+          <div class="eyebrow">Sound familiar?</div>
+          <h2>Running a business shouldn’t mean living in your inbox.</h2>
+          <p class="lead">
+            These are the problems most small business owners tell us about
+            first.
+          </p>
+          <div class="grid">
+            <div class="pain">
+              <b>1</b
+              ><span
+                >Customers message late at night and wait until morning for a
+                reply, and some buy elsewhere.</span
+              >
+            </div>
+            <div class="pain">
+              <b>2</b
+              ><span
+                >You type the same price, size and delivery answer again and
+                again.</span
+              >
+            </div>
+            <div class="pain">
+              <b>3</b
+              ><span
+                >Orders get buried inside long chat threads and are easy to
+                miss.</span
+              >
+            </div>
+            <div class="pain">
+              <b>4</b
+              ><span
+                >Hiring more staff to answer messages costs more than the work
+                is worth.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="alt">
+        <div class="wrap">
+          <div class="eyebrow">What we build</div>
+          <h2>Three practical assistants, trained on your business.</h2>
+          <p class="lead">
+            Each one learns your products, prices and policies, and hands over
+            to you when it isn’t sure.
+          </p>
+          <div class="grid">
+            <div class="card">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"
+                />
+              </svg>
+              <h3>Customer chat assistant</h3>
+              <p>
+                Answers customers on Messenger, WhatsApp or your website, day
+                and night.
+              </p>
+              <ul>
+                <li>Prices, stock, delivery and returns</li>
+                <li>Replies in Bangla and English</li>
+                <li>Passes tricky questions to you</li>
+              </ul>
+            </div>
+            <div class="card">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="3" width="16" height="18" rx="2" />
+                <path d="M8 8h8M8 12h8M8 16h5" />
+              </svg>
+              <h3>Order and booking automation</h3>
+              <p>
+                Turns chats into clean, organized records so nothing gets lost.
+              </p>
+              <ul>
+                <li>Collects name, phone, address and items</li>
+                <li>Saves to Google Sheets or a dashboard</li>
+                <li>Sends you a daily summary</li>
+              </ul>
+            </div>
+            <div class="card">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="9" y="3" width="6" height="11" rx="3" />
+                <path d="M5 11a7 7 0 0 0 14 0M12 18v3" />
+              </svg>
+              <h3>Voice and task assistants</h3>
+              <p>
+                Custom voice assistants that listen and carry out routine tasks.
+              </p>
+              <ul>
+                <li>Wake word and spoken replies</li>
+                <li>Open apps, search, set reminders</li>
+                <li>Can run privately on your own computer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="demo">
+        <div class="wrap">
+          <div class="eyebrow">See it in action</div>
+          <h2>One assistant, many kinds of business.</h2>
+          <p class="lead">
+            Pick a business type to see an example of how JARVIS AI could talk
+            to your customers.
+          </p>
+          <div class="tabs" role="tablist" aria-label="Business type">
+            <button class="tab" role="tab" aria-selected="true" data-t="shop">
+              Online shop
+            </button>
+            <button
+              class="tab"
+              role="tab"
+              aria-selected="false"
+              data-t="clinic"
+            >
+              Clinic
+            </button>
+            <button class="tab" role="tab" aria-selected="false" data-t="food">
+              Restaurant
+            </button>
+          </div>
+          <div class="panel chat" role="tabpanel" id="p-shop">
+            <div class="tag">Example conversation</div>
+            <div class="m u">Do you have this in size L?</div>
+            <div class="m a">
+              Yes, size L is in stock in black and navy. Which would you like?
+            </div>
+            <div class="m u">Navy. Is cash on delivery available?</div>
+            <div class="m a">
+              Yes. Please share your name, phone and address and I’ll place the
+              order.
+            </div>
+          </div>
+          <div class="panel chat" role="tabpanel" id="p-clinic" hidden>
+            <div class="tag">Example conversation</div>
+            <div class="m u">আমি কাল ডাক্তারের অ্যাপয়েন্টমেন্ট নিতে চাই।</div>
+            <div class="m a">
+              Of course. Do mornings or evenings work better for you?
+            </div>
+            <div class="m u">Evening.</div>
+            <div class="m a">
+              I’ll check the evening slots and send you the available times to
+              choose from.
+            </div>
+          </div>
+          <div class="panel chat" role="tabpanel" id="p-food" hidden>
+            <div class="tag">Example conversation</div>
+            <div class="m u">Do you have a table for 4 tonight?</div>
+            <div class="m a">
+              I can request one. What time, and what name should I put it under?
+            </div>
+            <div class="m u">8 PM, under Rahim.</div>
+            <div class="m a">
+              Request sent to the team. You’ll get a confirmation shortly.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools" class="alt">
+        <div class="wrap">
+          <div class="eyebrow">Free tools</div>
+          <h2>See if AI is worth it for your business.</h2>
+          <p class="lead">
+            No sign-up and nothing is stored. Use these two tools to get a quick
+            idea before you talk to anyone.
+          </p>
+          <div class="tools">
+            <div class="card" id="calc">
+              <h3 class="t">Time calculator</h3>
+              <p>How much time do repeat questions cost you each month?</p>
+              <label for="c-msgs">Customer messages per day</label
+              ><input id="c-msgs" type="number" min="0" value="40" />
+              <label for="c-min">Minutes to reply to one message</label
+              ><input id="c-min" type="number" min="0" value="2" />
+              <label for="c-share"
+                >Share that are repeat questions:
+                <span id="c-share-out">60%</span></label
+              ><input id="c-share" type="range" min="0" max="100" value="60" />
+              <label for="c-rate">What an hour of your time is worth (৳)</label
+              ><input id="c-rate" type="number" min="0" value="300" />
+              <div class="out">
+                <span>Time spent on repeat replies each month</span
+                ><strong><span id="c-hours">0</span> hours</strong
+                ><span>That time is worth about</span
+                ><strong id="c-value">৳0</strong>
+              </div>
+              <p class="note">
+                A rough estimate from your own numbers, not a promise of
+                savings.
+              </p>
+            </div>
+            <div class="card" id="quiz">
+              <h3 class="t">AI readiness checklist</h3>
+              <p>Tick everything that’s true for your business.</p>
+              <label class="chk"
+                ><input type="checkbox" /> Customers ask me the same questions
+                often</label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> I get messages outside working
+                hours</label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> I take orders or bookings through
+                chat</label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> My prices and policies are written
+                down somewhere</label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> I lose time copying orders into a
+                sheet or notebook</label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> I want to answer faster without
+                hiring more people</label
+              >
+              <div class="out" aria-live="polite">
+                <span>Your score</span><strong id="q-score">0 of 6</strong
+                ><span id="q-msg">Tick a box to see what it means.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dark" id="how">
+        <div class="wrap">
+          <h2 style="margin-bottom: 40px">How it works</h2>
+          <div
+            class="grid"
+            style="
+              gap: 40px;
+              grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            "
+          >
+            <div>
+              <div class="num">01</div>
+              <h3>Discovery call</h3>
+              <p>
+                We learn how your business runs and choose the one task worth
+                automating first.
+              </p>
+            </div>
+            <div>
+              <div class="num">02</div>
+              <h3>Share your info</h3>
+              <p>
+                You send products, prices, policies and sample customer
+                messages.
+              </p>
+            </div>
+            <div>
+              <div class="num">03</div>
+              <h3>Build and test</h3>
+              <p>
+                We train the assistant and test it with you on real questions
+                before launch.
+              </p>
+            </div>
+            <div>
+              <div class="num">04</div>
+              <h3>Launch and improve</h3>
+              <p>
+                We go live on your channels and keep improving as your business
+                grows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="eyebrow">Who it’s for</div>
+          <h2>Made for local businesses.</h2>
+          <p class="lead">
+            If customers message you with questions, an assistant can help.
+          </p>
+          <div class="grid s">
+            <div class="card">
+              <h3 class="t" style="font-size: 19px">Online shops</h3>
+              <p>Product questions, sizes, delivery and order capture.</p>
+            </div>
+            <div class="card">
+              <h3 class="t" style="font-size: 19px">Clinics and salons</h3>
+              <p>Appointment booking and reminders.</p>
+            </div>
+            <div class="card">
+              <h3 class="t" style="font-size: 19px">Restaurants</h3>
+              <p>Menu questions, table and order requests.</p>
+            </div>
+            <div class="card">
+              <h3 class="t" style="font-size: 19px">Coaching centers</h3>
+              <p>Admission info, class schedules and fees.</p>
+            </div>
+            <div class="card">
+              <h3 class="t" style="font-size: 19px">Real estate</h3>
+              <p>Property details and viewing requests.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="alt">
+        <div class="wrap">
+          <div class="eyebrow">Why JARVIS AI</div>
+          <h2>Not a generic chatbot. Built around your business.</h2>
+          <p class="lead">
+            Here’s what makes us different from copy-paste bots and busy
+            agencies.
+          </p>
+          <div class="grid">
+            <div class="card">
+              <svg class="tick" aria-hidden="true"><use href="#ck" /></svg>
+              <h3>Bangla and English from day one</h3>
+              <p>
+                Your customers can write the way they speak. We test with real
+                Bangla and English messages before launch.
+              </p>
+            </div>
+            <div class="card">
+              <svg class="tick" aria-hidden="true"><use href="#ck" /></svg>
+              <h3>Trained on your information</h3>
+              <p>
+                Your prices, products and policies, not generic answers pulled
+                from the internet.
+              </p>
+            </div>
+            <div class="card">
+              <svg class="tick" aria-hidden="true"><use href="#ck" /></svg>
+              <h3>Honest about what it doesn’t know</h3>
+              <p>
+                When it isn’t sure, it hands the chat to you instead of
+                guessing.
+              </p>
+            </div>
+            <div class="card">
+              <svg class="tick" aria-hidden="true"><use href="#ck" /></svg>
+              <h3>Clear about your data</h3>
+              <p>
+                We explain exactly where your information is stored before we
+                start.
+              </p>
+            </div>
+            <div class="card">
+              <svg class="tick" aria-hidden="true"><use href="#ck" /></svg>
+              <h3>Simple, local pricing</h3>
+              <p>
+                Packages start at ৳499, and your first consultation is free so
+                you can see the fit first.
+              </p>
+            </div>
+            <div class="card">
+              <svg class="tick" aria-hidden="true"><use href="#ck" /></svg>
+              <h3>Voice assistants too</h3>
+              <p>
+                Beyond chat, we build voice assistants that can run privately on
+                your own computer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="learn">
+        <div class="wrap">
+          <div class="eyebrow">Free learning</div>
+          <h2>Use AI better, starting today.</h2>
+          <p class="lead">Helpful even if you never hire us.</p>
+          <div class="tools">
+            <div class="card">
+              <h3 class="t">AI in plain words</h3>
+              <dl class="dl">
+                <dt>AI assistant</dt>
+                <dd>
+                  Software that understands requests in everyday language and
+                  helps you do things.
+                </dd>
+                <dt>Chatbot</dt>
+                <dd>
+                  An assistant you talk to by typing, such as on Messenger or a
+                  website.
+                </dd>
+                <dt>Prompt</dt>
+                <dd>
+                  The instruction you give an AI. Clearer instructions give
+                  better answers.
+                </dd>
+                <dt>Automation</dt>
+                <dd>
+                  A task that runs by itself, like saving every new order to a
+                  sheet.
+                </dd>
+                <dt>Hallucination</dt>
+                <dd>
+                  When an AI confidently says something wrong. Always check
+                  important facts.
+                </dd>
+              </dl>
+            </div>
+            <div class="card">
+              <h3 class="t">5 prompts to try today</h3>
+              <p>Paste these into any AI chat and fill in the brackets.</p>
+              <div class="prompt">
+                “Write a polite reply to this customer complaint, apologizing
+                and offering a solution: [paste message].”
+              </div>
+              <div class="prompt">
+                “Write a short, friendly product description for [product] that
+                mentions [3 features].”
+              </div>
+              <div class="prompt">
+                “List 10 questions customers might ask about [my business], with
+                short answers.”
+              </div>
+              <div class="prompt">
+                “Translate this message into natural Bangla for customers:
+                [text].”
+              </div>
+              <div class="prompt">
+                “Summarize these orders into a short daily report: [paste
+                orders].”
+              </div>
+              <p class="note">
+                Tip: add who you are, who the customer is, and the tone you
+                want.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="t">Starter FAQ template</h3>
+              <p>
+                Write answers to these 8 questions and your assistant (or your
+                team) can reply to most customers instantly.
+              </p>
+              <ol class="faqlist" id="faq-list">
+                <li>What are your prices?</li>
+                <li>Do you offer delivery, and how long does it take?</li>
+                <li>What are your delivery charges?</li>
+                <li>Is cash on delivery available?</li>
+                <li>What is your return and exchange policy?</li>
+                <li>How can I track my order?</li>
+                <li>What are your opening hours?</li>
+                <li>Where are you located?</li>
+              </ol>
+              <button class="btn" type="button" id="copy-btn">
+                Copy the list
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="alt">
+        <div class="wrap">
+          <div class="eyebrow">Packages</div>
+          <h2>Pick the plan that fits your business.</h2>
+          <p class="lead">
+            Start small and upgrade as you grow. We’ll confirm the exact scope
+            on your free call.
+          </p>
+          <div class="plans">
+            <div class="plan">
+              <h3>Starter</h3>
+              <div class="best">Best for: trying AI on one job</div>
+              <div class="from">Starting from</div>
+              <div class="price">৳499</div>
+              <ul>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >One chat assistant on one channel
+                </li>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >FAQ and product training
+                </li>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >Bangla and English replies
+                </li>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >30 days of support
+                </li>
+              </ul>
+              <a class="btn ghost block" href="#contact">Choose Starter</a>
+            </div>
+            <div class="plan feat">
+              <span class="badge">Most popular</span>
+              <h3>Growth</h3>
+              <div class="best">Best for: shops taking orders in chat</div>
+              <div class="from">Starting from</div>
+              <div class="price">৳999</div>
+              <ul>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >Assistant on all your channels
+                </li>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >Order and booking capture
+                </li>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >Saves to Google Sheets
+                </li>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >Monthly improvements
+                </li>
+              </ul>
+              <a class="btn block" href="#contact">Choose Growth</a>
+            </div>
+            <div class="plan">
+              <h3>Custom</h3>
+              <div class="best">Best for: special needs and bigger teams</div>
+              <div class="from">Starting from</div>
+              <div class="price">৳1499</div>
+              <ul>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >Everything in Growth
+                </li>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >Voice or desktop assistants
+                </li>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >Custom integrations
+                </li>
+                <li>
+                  <svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+                  >Dedicated support
+                </li>
+              </ul>
+              <a class="btn ghost block" href="#contact">Choose Custom</a>
+            </div>
+          </div>
+          <div class="every">
+            <b>Every package includes</b>
+            <span
+              ><svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+              >Setup and training on your info</span
+            >
+            <span
+              ><svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+              >Handover to you when unsure</span
+            >
+            <span
+              ><svg class="tick" aria-hidden="true"><use href="#ck" /></svg
+              >Testing before launch</span
+            >
+          </div>
+          <div class="scroll">
+            <table>
+              <caption
+                class="note"
+                style="text-align: left; padding: 14px 18px 0"
+              >
+                Compare packages
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">Starter</th>
+                  <th scope="col">Growth</th>
+                  <th scope="col">Custom</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Chat channels</th>
+                  <td>1</td>
+                  <td>All</td>
+                  <td>All</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bangla and English</th>
+                  <td>
+                    <svg class="tick" role="img" aria-label="Included">
+                      <use href="#ck" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="tick" role="img" aria-label="Included">
+                      <use href="#ck" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="tick" role="img" aria-label="Included">
+                      <use href="#ck" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Order and booking capture</th>
+                  <td class="no">
+                    <span role="img" aria-label="Not included">—</span>
+                  </td>
+                  <td>
+                    <svg class="tick" role="img" aria-label="Included">
+                      <use href="#ck" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="tick" role="img" aria-label="Included">
+                      <use href="#ck" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Google Sheets saving</th>
+                  <td class="no">
+                    <span role="img" aria-label="Not included">—</span>
+                  </td>
+                  <td>
+                    <svg class="tick" role="img" aria-label="Included">
+                      <use href="#ck" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="tick" role="img" aria-label="Included">
+                      <use href="#ck" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Voice or desktop assistant</th>
+                  <td class="no">
+                    <span role="img" aria-label="Not included">—</span>
+                  </td>
+                  <td class="no">
+                    <span role="img" aria-label="Not included">—</span>
+                  </td>
+                  <td>
+                    <svg class="tick" role="img" aria-label="Included">
+                      <use href="#ck" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Custom integrations</th>
+                  <td class="no">
+                    <span role="img" aria-label="Not included">—</span>
+                  </td>
+                  <td class="no">
+                    <span role="img" aria-label="Not included">—</span>
+                  </td>
+                  <td>
+                    <svg class="tick" role="img" aria-label="Included">
+                      <use href="#ck" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Support</th>
+                  <td>30 days</td>
+                  <td>Monthly improvements</td>
+                  <td>Dedicated</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 style="font-size: 28px; margin: 64px 0 8px">
+            Offers and how we deliver
+          </h3>
+          <p class="lead" style="margin-bottom: 28px">
+            What you get before you buy, and how the work reaches you.
+          </p>
+          <div class="grid s">
+            <div class="card">
+              <h3 class="t">Free consultation</h3>
+              <p>
+                A free 30-minute call to find the first task worth automating.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="t">Free tools and guides</h3>
+              <p>
+                The calculator, checklist, prompts and FAQ template on this page
+                are free, with or without hiring us.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="t">Delivered online</h3>
+              <p>
+                We work by WhatsApp, call and email, so you don’t need to visit
+                an office. We test everything with you before it goes live.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="t">Clear timeline</h3>
+              <p>
+                You get the scope and timeline on the discovery call, before any
+                work starts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews">
+        <div class="wrap">
+          <div class="eyebrow">Reviews</div>
+          <h2>What customers say.</h2>
+          <p class="lead" id="reviews-lead">
+            We’re just getting started, and every early customer shapes what we
+            build.
+          </p>
+          <div class="grid" id="reviews-grid"></div>
+          <p style="margin: 28px 0 0">
+            <a
+              class="btn ghost"
+              id="fb"
+              href="https://wa.me/8801853940963"
+              target="_blank"
+              rel="noopener"
+              >Share your feedback</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section id="faq" class="alt">
+        <div class="wrap" style="max-width: 820px">
+          <div class="eyebrow">FAQ</div>
+          <h2 style="margin-bottom: 28px">Common questions.</h2>
+          <details>
+            <summary>Do I need any technical knowledge?</summary>
+            <p>
+              No. You tell us how your business works and we handle the setup.
+              We’ll show you how to update answers yourself if you want to.
+            </p>
+          </details>
+          <details>
+            <summary>Will it understand Bangla?</summary>
+            <p>
+              It can handle Bangla and English. We test it with your real
+              customer messages before launch so you can see how it does.
+            </p>
+          </details>
+          <details>
+            <summary>What if it doesn’t know an answer?</summary>
+            <p>
+              It says so and passes the chat to you instead of guessing, so
+              customers are never given made-up information.
+            </p>
+          </details>
+          <details>
+            <summary>How long does setup take?</summary>
+            <p>
+              It depends on the package and how quickly you share your
+              information. We’ll give you a clear timeline on the discovery
+              call.
+            </p>
+          </details>
+          <details>
+            <summary>How much does it cost?</summary>
+            <p>
+              Packages start at ৳499. We confirm the exact scope and price on
+              your free call, so there are no surprises.
+            </p>
+          </details>
+          <details>
+            <summary>Do I need to visit an office?</summary>
+            <p>
+              No. We work online by WhatsApp, call and email, and we test
+              everything with you before launch.
+            </p>
+          </details>
+          <details>
+            <summary>Is my customers’ data safe?</summary>
+            <p>
+              We only use the information you give us, and we explain exactly
+              where it is stored before we start.
+            </p>
+          </details>
+          <details>
+            <summary>Can I change or turn it off later?</summary>
+            <p>
+              Yes. The assistant is yours to adjust, pause or switch off at any
+              time.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <div class="wrap contact">
+          <div>
+            <h2 style="margin-bottom: 16px">Ready to put AI to work?</h2>
+            <p class="lead">
+              Book a free 30-minute call and we’ll find the first task to
+              automate together.
+            </p>
+            <a
+              class="cbox"
+              href="https://wa.me/8801853940963"
+              target="_blank"
+              rel="noopener"
+              ><span><small>WhatsApp</small><b>01853940963</b></span></a
+            >
+            <a class="cbox" href="tel:+8801853940963"
+              ><span><small>Call</small><b>01853940963</b></span></a
+            >
+            <a class="cbox" href="mailto:redwanhasancse@gmail.com"
+              ><span
+                ><small>Email</small><b>redwanhasancse@gmail.com</b></span
+              ></a
+            >
+            <div class="cbox">
+              <span><small>Location</small><b>Dhaka, Bangladesh</b></span>
+            </div>
+          </div>
+          <form class="formcard" id="lead" novalidate>
+            <h3 class="t" style="font-size: 24px; margin-bottom: 6px">
+              Tell us about your business
+            </h3>
+            <p class="note" style="margin: 0 0 6px">
+              This opens WhatsApp with your message ready to send.
+            </p>
+            <label for="f-name">Your name</label
+            ><input id="f-name" type="text" autocomplete="name" />
+            <label for="f-type">Business type</label>
+            <select id="f-type">
+              <option>Online shop</option>
+              <option>Clinic or salon</option>
+              <option>Restaurant</option>
+              <option>Coaching center</option>
+              <option>Real estate</option>
+              <option>Other</option>
+            </select>
+            <label for="f-msg">What would you like help with?</label
+            ><textarea id="f-msg"></textarea>
+            <div style="margin-top: 18px">
+              <button class="btn block" type="submit">Send on WhatsApp</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© JARVIS AI · Dhaka, Bangladesh</span
+        ><span>Built with care for local businesses</span>
+      </div>
+    </footer>
+
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
