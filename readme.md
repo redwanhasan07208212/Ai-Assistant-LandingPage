@@ -8,6 +8,8 @@ Built with plain HTML, CSS and JavaScript. No frameworks, no build step, no depe
 
 - **Fully responsive**: mobile hamburger menu, stacked hero on tablets, two-column hero on desktop
 - **Light and dark mode** with a toggle that remembers the visitor's choice and follows the system setting by default
+- **Bangla / English language switch** that translates the whole page, including the tools, form and messages, and remembers the visitor's choice
+- **Polish**: scroll progress bar, reveal-on-scroll animations, highlighted current section in the menu, floating WhatsApp button and back-to-top button
 - **Services and "Why us"** sections explaining what the business offers and what makes it different
 - **Interactive demo**: example customer chats for an online shop, a clinic and a restaurant
 - **Free tools for visitors**:
@@ -26,9 +28,10 @@ Built with plain HTML, CSS and JavaScript. No frameworks, no build step, no depe
 .
 ├── index.html     # page content
 ├── css/
-    └── style.css      # all styles, including light and dark themes
+│   └── style.css  # all styles, including light and dark themes
 ├── js/
-│   └── script.js  # menu, theme toggle, demo tabs, tools, reviews, contact form
+│   ├── i18n.js    # Bangla translations
+│   └── script.js  # language switch, menu, theme, tabs, tools, reviews, form
 └── README.md
 ```
 
@@ -56,6 +59,7 @@ python3 -m http.server 8000
 | Package prices         | The `.price` elements in the `#pricing` section                                  |
 | Phone, email, WhatsApp | The `#contact` section in `index.html`, and the `wa.me` number in `js/script.js` |
 | Customer reviews       | The `REVIEWS` array in `js/script.js`                                            |
+| Bangla translations    | `js/i18n.js` (each key is the exact English text on the page)                    |
 | Colors and theme       | CSS variables at the top of `style.css`                                          |
 
 To add a real review, edit the `REVIEWS` array in `js/script.js`:
@@ -68,7 +72,7 @@ var REVIEWS = [
 
 ## Tech
 
-HTML5 · CSS3 (custom properties, grid, flexbox) · Vanilla JavaScript · Google Fonts (Space Grotesk, Inter)
+HTML5 · CSS3 (custom properties, grid, flexbox) · Vanilla JavaScript · Google Fonts (Space Grotesk, Inter, Noto Sans Bengali)
 
 ## Contact
 
